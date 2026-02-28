@@ -1,0 +1,1 @@
+Syntax :- rules we have to follow when using a programming language.
