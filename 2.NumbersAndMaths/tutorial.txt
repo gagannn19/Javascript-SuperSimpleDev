@@ -1,0 +1,12 @@
+Computers sometimes face problems representing some floating-point values in binary (0s and 1s) because they use a fixed number of bits, and many decimal fractions cannot be represented exactly in binary. Therefore, the computer stores the closest possible approximation.
+
+But in terms of money, how to deal with inaccuracies ...
+
+like 20.95 + 7.99 = 28.939999999999998
+so we can do 
+(2095 + 799) / 100 = 28.94 ... accurate
+
+Math.round(2.2) = 2
+Math.round(2.8) = 3
+Math.floor(2.8) = 2
+Math.ceil(2.2) = 3
