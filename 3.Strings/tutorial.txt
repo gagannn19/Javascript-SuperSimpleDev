@@ -1,0 +1,35 @@
+string represents text
+concatenation = combine strings together
+
+typeof 2 
+"number"
+
+typeof 'gagan'
+"string"
+
+'hwllo' + 4
+"hwllo4"
+Type coercion
+(automatic type conversion)
+
+Strings also follows order of operations
+'$' + (2095 + 799) / 100
+"$28.94"
+
+3 ways to create string in javascript
+1. single quotes ' '
+2. double quotes " "
+3. back ticks ` `
+
+string created from backticks called template strings.
+template strings have special features Interpolation = insert valuedirectly into a string
+`Items (${1+1})`;
+"Items (2)"
+template strins have another special feature multi-line strings
+
+
+Escape Characters = \character
+character can be numbers, letters, symbols
+\' = single quote escape character
+\" = double quotes escpae character
+\n = newline escape character
