@@ -1,0 +1,48 @@
+<!-- comments = pieces of code that computer ignores -->
+<!-- indents :- spaces that make the code more readable -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CSS Review</title>
+    <style>
+      /* css selector :- selects which element to change */
+      .red-button { 
+        /* css styles :- how to change the appearance */
+        background-color: red;
+        color: white;
+        border: none;
+      }
+      .yellow-button {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- html attributes :- change the behavior of an element -->
+    <!-- syntax rule for html attributes :- written in the opening tag of an element with an space with tag name, attribute name = attribute value -->
+    <button title="tooltip" class="red-button" onclick="
+      alert('good job!');
+    ">
+      hello
+    </button>
+
+    <p>
+      paragraph of <button class="yellow-button">text</button>
+    </p>
+
+    <script>
+      // This is a comment.
+      alert('hello');
+
+      /*
+      multi
+      line
+      comment
+      */
+
+      console.log(2+2);
+      console.log('some' + 'text');
+    </script>
+  </body>
+</html>
