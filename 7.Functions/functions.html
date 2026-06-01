@@ -1,0 +1,36 @@
+<!-- Why we use functions? -->
+<!-- A functions lets us reuse code. -->
+<!-- A function is easier to update in future. -->
+<!-- return statement lets the value out of a function -->
+<!-- parameter puts a value into a function -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<body>
+
+  <script>
+    /*
+    function function1() {
+      console.log('hello');
+      console.log(2+2);
+    }
+
+    function1(); // calling the function, running the function, executing the function
+    function1();
+    */
+   
+    function calculateTax(cost, taxPercent = 0.1) { // cost is parameter here and taxPercent is also a parameter with default value = 0.1
+      console.log(taxPercent);
+      console.log(cost * taxPercent);
+    }
+
+    calculateTax(2000, 0.2); // here 2000 is an argument
+    calculateTax(5000); // passing value 5000 to a function
+  </script>
+</body>
+</html>
