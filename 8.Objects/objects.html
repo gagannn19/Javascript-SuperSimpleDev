@@ -1,0 +1,165 @@
+<!-- what is an object? :- An object group multiple value together -->
+ <!-- why we use object? :- Objects make our code more organized  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+
+    /*
+    // name and price are property , 'socks' and 1090 are value.
+    // name: 'socks' is called property-value pair
+    const product = {
+      name: 'socks',
+      price: 1090
+    };
+    console.log(product);
+    console.log(typeof product)
+    // product.name ... this syntax is called dot notation
+    // if we try to access a propperty that not exist then value will be undefined
+    console.log(product.name); 
+    console.log(product.price);
+
+    product.name = 'cotton socks';
+    console.log(product);
+
+    product.newProperty = true;
+    console.log(product);
+    
+    delete product.newProperty;
+    console.log(product);
+    */
+
+    /*
+    const product2 = {
+      name : 'shirt',
+      ['delivery-time'] : '1 day',  // brackets are optional
+      rating : {
+        stars : 4.5,
+        count : 87
+      },
+      fun : function function1() {
+        console.log('function inside object');
+      } // function is just another type of value, function inside object is called method
+    };
+
+    console.log(product2); // console is an object and log is a function inside it.
+    console.log(product2.name);
+    console.log(product2['name']); // bracket notation ... it does the same thing as dot notation.
+    // bracket notation lets use properties that don't work with dot notation.
+    // console.log(product2.delivery-time); // it will give error because js thinks '-' this is a minus sign and js starts doing maths here.
+    // we can solve this problem by bracket notation
+    console.log(product2['delivery-time']);
+
+    console.log(product2.rating.count);
+
+    product2.fun();
+
+    console.log(typeof console);
+    console.log(typeof console.log);
+
+    // console.log, Math.random(), etc are built-in Objects, Built-in Objects are provided by the language.
+    // 2 more built-in Objects :- JSON, localStorage
+
+    // JSON Built-in Object :- Helps us work with JSON.
+    // Javascript syntax only make sense in javascript but JSON syntax can e understandble by any languages. 
+    // JSON syntax is more universal
+    // We use JSON :-
+    //         --> when we send data between computers
+    //         --> when we store data
+
+    // Built-in JSON Object :-
+    // convert: js object --> JSON
+
+    console.log(JSON.stringify(product2));
+    console.log(typeof JSON.stringify(product2));
+
+    // convert : json --> js object()
+    // JSON.parse();
+
+    const jsonString = JSON.stringify(product2);
+    console.log(JSON.parse(jsonString));
+
+
+
+    // Next Built-in object:
+    // localStorage
+    // - save value more permanently.
+
+    // variables are temporary
+    // if we refresh/ close the page, all the variables are deleted.
+
+    */
+
+    // string can also have properties. But how string have prooperties like objects.
+    // By auto-boxing, string 'hello' wraped and became special object automatically
+    // auto-boxing works with other values like numbers and booleans.
+    // but not on undefined and null..
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase());
+    console.log(3.0.toString());
+    console.log(true.toString());
+    // console.log(null.property); // gives error 
+
+
+
+
+
+
+    // Object are refrences.
+
+    const object1 = {
+      message : 'hello'
+    };
+
+    const object2 = object1; // it doesn't create a new copy but only point on the same address in the memory as object1.
+
+    object1.message = 'good job!';
+    console.log(object1);
+    console.log(object2); 
+
+    // const prevents a variable from being reassigned to a new reference, but it does not prevent modifying the contents of the object or array it references.
+
+    const object3 = {
+      message : 'good job!'
+    };
+    console.log(object3 === object1); // compares the refrences not the value inside...
+    console.log(object2 === object1);
+
+    const object4  = {
+      message : 'good job!',
+      price: 799
+    };
+
+    // const message = object4.message;
+    const { message, price } = object4; // this shortcut is called destructuring.
+    console.log(message);
+    console.log(price);
+
+
+
+
+    // shorthand property ...
+
+    const object5 = {
+      // message: message
+      message, // shorthand property ... when the property and value have same name we can just write the name once.
+      // method : function function1() {
+      //   console.log('method');
+      // }
+      method() { // shortcut for above function ... called shorthand method
+        console.log('method');
+      }
+    };
+    console.log(object5.message);
+    console.log(object5);
+    object5.method();
+
+  </script>
+</body> 
+</html>
